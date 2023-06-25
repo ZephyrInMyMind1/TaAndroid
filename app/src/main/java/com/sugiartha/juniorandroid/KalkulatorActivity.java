@@ -14,6 +14,7 @@ public class KalkulatorActivity extends AppCompatActivity {
     Button btnHitung;
     TextView txtHasil;
 
+    //cek
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
