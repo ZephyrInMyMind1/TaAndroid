@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".ListActivity">
 
     <ListView
+        android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="17dp"
-        android:id="@+id/list_view" />
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="8dp" />
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Pilih Nama Negara :"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp"
-        android:layout_alignParentTop="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"/>
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>

@@ -2,19 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/blink">
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengaktifkan Lokasi Anda"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#DBDF16"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/loc" />
+
+
+
     <TextView
         android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lokasi GPS Sekarang"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="60sp"
+        android:textColor="#3A6149"
+        />
+
     <Button
         android:id="@+id/getLocation"
+        android:layout_width="175dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundbtn"
         android:text="Dapatkan Lokasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textColor="#C6C7CC" />
 </LinearLayout>
