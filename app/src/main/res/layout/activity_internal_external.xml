@@ -1,46 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/background_light"
     tools:context=".InternalExternalActivity">
 
     <Button
         android:id="@+id/btnBuatFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buat File"/>
+        android:layout_marginBottom="8dp"
+        android:background="@color/google_blue"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Buat File"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnUbahFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ubah File"/>
+        android:layout_marginBottom="8dp"
+        android:background="@color/google_blue"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Ubah File"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnBacaFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Baca File"/>
+        android:layout_marginBottom="8dp"
+        android:background="@color/google_blue"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Baca File"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnHapusFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hapus File"/>
+        android:layout_marginBottom="8dp"
+        android:background="@color/google_blue"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Hapus File"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/textBaca"
         android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:inputType="textMultiLine"
-        android:background="@android:color/darker_gray"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
-        android:gravity="left|top"
-        android:padding="5dp"
-        android:layout_marginTop="10dp"
-        android:hint="Hasil Baca File"/>
+        android:fontFamily="@font/montserrat"
+        android:gravity="top|start"
+        android:hint="Hasil Baca File"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
 
 </LinearLayout>

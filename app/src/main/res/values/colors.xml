@@ -15,4 +15,5 @@
     <color name="night_background">#262626</color>
     <color name="night_text">#FFFFFF</color>
     <color name="sea_blue">#375CA6</color>
+    <color name="google_blue">#4285F4</color>
 </resources>
