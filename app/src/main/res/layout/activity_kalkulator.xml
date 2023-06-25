@@ -1,44 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".KalkulatorActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Input Angka Pertama"/>
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Angka Pertama"
-        android:id="@+id/angka1"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Input Angka Kedua"/>
+        android:inputType="number"
+        android:hint="Angka Pertama" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextNumber2"
+        android:layout_below="@id/editTextNumber1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Angka Kedua"
-        android:id="@+id/angka2"/>
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:hint="Angka Kedua" />
 
     <Button
+        android:id="@+id/buttonAdd"
+        android:layout_below="@id/editTextNumber2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HITUNG"
-        android:id="@+id/btnHitung"/>
+        android:layout_marginTop="16dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_toRightOf="@id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_toRightOf="@id/buttonSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_toRightOf="@id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="/" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewResult"
+        android:layout_below="@id/buttonDivide"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hasil"
-        android:id="@+id/txtHasil"/>
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Hasil: "/>
 
-</LinearLayout>
+</RelativeLayout>
