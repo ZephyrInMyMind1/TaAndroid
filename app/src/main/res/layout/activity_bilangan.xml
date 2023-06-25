@@ -7,27 +7,65 @@
     android:orientation="vertical"
     tools:context=".BilanganActivity">
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:alpha="0.4"
+        android:src="@drawable/numbers"
+        android:scaleType="fitCenter"
+
+        />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewInput"
+        android:layout_width="316dp"
         android:layout_height="wrap_content"
-        android:text="Masukkan Angka" />
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:background="#F5F5F5"
+        android:elevation="4dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Masukkan Angka"
+        android:textColor="#333333"
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Masukkan Sembarang Angka"
-        android:id="@+id/angka"/>
+        android:inputType="number"
+        android:id="@+id/angka"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
 
     <Button
+        android:id="@+id/proses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
         android:text="Proses"
-        android:id="@+id/proses"/>
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp" />
 
     <TextView
+        android:id="@+id/bilangan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
         android:text="Bilangan"
-        android:id="@+id/bilangan"/>
+        android:textColor="#702C7D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 
 </LinearLayout>
