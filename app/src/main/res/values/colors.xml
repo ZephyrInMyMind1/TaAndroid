@@ -8,4 +8,11 @@
     <color name="orange">#fca220</color>
     <color name="coklat">#c49b60</color>
     <color name="putih">#FFFFFF</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="night_background">#262626</color>
+    <color name="night_text">#FFFFFF</color>
+    <color name="sea_blue">#375CA6</color>
 </resources>
