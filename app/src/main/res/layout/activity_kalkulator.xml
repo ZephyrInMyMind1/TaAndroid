@@ -25,49 +25,71 @@
         android:inputType="number"
         android:hint="Angka Kedua" />
 
-    <Button
-        android:id="@+id/buttonAdd"
-        android:layout_below="@id/editTextNumber2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layoutbtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber2"
         android:layout_marginTop="16dp"
-        android:text="+" />
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/buttonSubtract"
-        android:layout_below="@id/editTextNumber2"
-        android:layout_toRightOf="@id/buttonAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="-" />
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button"
+            android:layout_marginEnd="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="+"
+            android:layout_marginRight="10dp" />
 
-    <Button
-        android:id="@+id/buttonMultiply"
-        android:layout_below="@id/editTextNumber2"
-        android:layout_toRightOf="@id/buttonSubtract"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="*" />
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button"
+            android:layout_marginEnd="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="-"
+            android:layout_marginRight="10dp" />
 
-    <Button
-        android:id="@+id/buttonDivide"
-        android:layout_below="@id/editTextNumber2"
-        android:layout_toRightOf="@id/buttonMultiply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="/" />
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button"
+            android:layout_marginEnd="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="*"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="/" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_below="@id/buttonDivide"
+        android:layout_below="@id/layoutbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:text="Hasil: "/>
+        android:text="Hasil: "
+        android:textColor="#000000"/>
 
 </RelativeLayout>
