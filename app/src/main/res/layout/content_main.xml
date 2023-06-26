@@ -6,58 +6,68 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:background="@drawable/bg"
+    android:background="#0d141d"
     tools:showIn="@layout/app_bar_main">
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="384dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginBottom="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:background="@drawable/bordercarouse"
         app:fillColor="#FFFFFFFF"
         app:pageColor="#00000000"
         app:radius="6dp"
         app:slideInterval="3000"
         app:strokeColor="#FF777777"
-        app:strokeWidth="1dp"/>
+        app:strokeWidth="1dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
 
         android:layout_below="@+id/carouselView">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="@dimen/lebar"
-            android:layout_height="@dimen/tinggi"
-            android:text="Nama"
-            android:id="@+id/nama"/>
+            <Button
+                android:layout_width="@dimen/lebar"
+                android:layout_height="@dimen/tinggi"
+                android:text="Nama"
+                android:background="@drawable/roundedhome"
+                android:id="@+id/nama"/>
 
-        <Button
-            android:layout_width="@dimen/lebar"
-            android:layout_height="@dimen/tinggi"
-            android:text="Kalkulator"
-            android:id="@+id/kalkulator"/>
+            <Button
+                android:layout_width="@dimen/lebar"
+                android:layout_height="@dimen/tinggi"
+                android:text="Kalkulator"
+                android:id="@+id/kalkulator"/>
 
-        <Button
-            android:layout_width="@dimen/lebar"
-            android:layout_height="@dimen/tinggi"
-            android:text="Lingkaran"
-            android:id="@+id/lingkaran"/>
-    </LinearLayout>
+            <Button
+                android:layout_width="@dimen/lebar"
+                android:layout_height="@dimen/tinggi"
+                android:text="Lingkaran"
+                android:background="@drawable/roundedhome"
+                android:id="@+id/lingkaran"/>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,6 +84,7 @@
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="Login"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/login"/>
 
             <Button
@@ -94,6 +105,7 @@
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="Calculator"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/calculator"/>
 
             <Button
@@ -106,6 +118,7 @@
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="List View"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/listview"/>
 
         </LinearLayout>
@@ -126,6 +139,7 @@
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="File"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/internalexternal"/>
 
             <Button
@@ -146,18 +160,21 @@
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="List"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/list"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="SQLite"
+
                 android:id="@+id/sqlite"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="MySQL"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/mysql"/>
 
         </LinearLayout>
@@ -178,12 +195,14 @@
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="Seluler"
+                android:background="@drawable/roundedhome"
                 android:id="@+id/seluler"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
                 android:layout_height="@dimen/tinggi"
                 android:text="Sensor"
+
                 android:id="@+id/sensor"/>
 
         </LinearLayout>
