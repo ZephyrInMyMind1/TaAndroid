@@ -37,8 +37,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
 
         android:layout_below="@+id/carouselView">
 
@@ -50,21 +50,25 @@
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Nama"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/nama"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Kalkulator"
+                android:background="@drawable/roundedhome2"
+                android:layout_margin="5dp"
                 android:id="@+id/kalkulator"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Lingkaran"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/lingkaran"/>
         </LinearLayout>
@@ -76,21 +80,26 @@
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Bilangan"
+                android:background="@drawable/roundedhome2"
+                android:layout_margin="5dp"
                 android:id="@+id/bilangan"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Login"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/login"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Sign Up"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedhome2"
                 android:id="@+id/signup"/>
 
         </LinearLayout>
@@ -103,21 +112,25 @@
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Calculator"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/calculator"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="BMI"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedhome2"
                 android:id="@+id/bmi"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="List View"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/listview"/>
 
@@ -131,21 +144,26 @@
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Catatan"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedhome2"
                 android:id="@+id/catatan"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="File"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/internalexternal"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Storage"
+                android:background="@drawable/roundedhome2"
+                android:layout_margin="5dp"
                 android:id="@+id/storage"/>
 
         </LinearLayout>
@@ -158,22 +176,25 @@
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="List"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/list"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="SQLite"
-
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedhome2"
                 android:id="@+id/sqlite"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="MySQL"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/mysql"/>
 
@@ -187,22 +208,26 @@
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="CEK GPS"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedhome2"
                 android:id="@+id/gps"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Seluler"
+                android:layout_margin="5dp"
                 android:background="@drawable/roundedhome"
                 android:id="@+id/seluler"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
-                android:layout_height="@dimen/tinggi"
+                android:layout_height="47dp"
                 android:text="Sensor"
-
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedhome2"
                 android:id="@+id/sensor"/>
 
         </LinearLayout>

@@ -1,41 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#0d141d"
     tools:context=".HitungBMIActivity">
 
     <EditText
         android:id="@+id/txtBeratBadan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="651dp"
         android:ems="10"
+        android:textColor="#d4dadf"
         android:hint="Isikan berat badan (kg)"
+        android:textColorHint="#d4dadf"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/txtTinggiBadan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="608dp"
         android:ems="10"
         android:hint="Isikan tinggi badan (m)"
+        android:textColor="#d4dadf"
+        android:textColorHint="#d4dadf"
         android:inputType="number|numberDecimal" />
 
     <Button
         android:id="@+id/btnCekBMI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CEK BMI" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="538dp"
+        android:background="@drawable/roundedbutton"
+        android:text="CEK BMI"
+        android:textColor="#d4dadf" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="191dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="276dp"
+        android:paddingLeft="0dp"
+        android:src="@drawable/bmi" />
 
     <TextView
         android:id="@+id/txtStatusBadan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="164dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/rounded"
+        android:gravity="center_horizontal"
         android:text="Status Badan"
         android:textAlignment="center"
-        android:textSize="24sp" />
 
-</LinearLayout>
+        android:textColor="#0d141d"
+        android:textSize="25dp" />
+
+</RelativeLayout>
