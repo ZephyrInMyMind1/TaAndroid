@@ -7,13 +7,22 @@
     android:background="@android:color/white"
     tools:context=".ListActivity">
 
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search..."
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textView" />
+
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/search_view"
         android:layout_marginTop="8dp" />
 
     <TextView
