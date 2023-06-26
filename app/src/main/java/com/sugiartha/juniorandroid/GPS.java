@@ -21,46 +21,62 @@ import com.google.android.gms.tasks.OnSuccessListener;
 
 public class GPS extends AppCompatActivity {
     private FusedLocationProviderClient client;
+
     @SuppressLint("MissingPermission")
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gps);
-        requestPermission();
-        client = LocationServices.getFusedLocationProviderClient(this);
+
+        // Inisialisasi tombol getLocation
         Button button = findViewById(R.id.getLocation);
+
+        // Tambahkan kode berikut setelah inisialisasi tombol getLocation
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ActivityCompat.checkSelfPermission(GPS.this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ) {
-                    System.out.println("Cek Permission");
+                if (ActivityCompat.checkSelfPermission(GPS.this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    // Jika izin tidak diberikan, tampilkan pesan atau minta izin kembali
+                    Toast.makeText(GPS.this, "Izin akses lokasi belum diberikan", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
                 client.getLastLocation().addOnSuccessListener(GPS.this, new OnSuccessListener<Location>() {
                     @Override
                     public void onSuccess(Location location) {
                         if (location != null) {
-                            TextView textView = findViewById(R.id.location);
-                            textView.setText(location.toString());
-                            System.out.print("Cek Lokasi: "+location.toString());
+                            // Mendapatkan lokasi berhasil
+                            double latitude = location.getLatitude();
+                            double longitude = location.getLongitude();
 
-                            Log.d("My Current location", "Lat : " + location.getLatitude() + " Long : " + location.getLongitude());
-                            // Display in Toast
-                            Toast.makeText(GPS.this,
-                                    "Lat : " + location.getLatitude() + " Long : " + location.getLongitude(),
-                                    Toast.LENGTH_LONG).show();
+                            // Tampilkan atau gunakan lokasi sesuai kebutuhan Anda
+                            TextView textView = findViewById(R.id.location);
+                            textView.setText("Lat: " + latitude + ", Long: " + longitude);
+
+                            Log.d("My Current location", "Lat: " + latitude + ", Long: " + longitude);
+                            Toast.makeText(GPS.this, "Lokasi ditemukan\nLat: " + latitude + ", Long: " + longitude, Toast.LENGTH_LONG).show();
+                        } else {
+                            // Tidak ada lokasi terakhir yang tersedia
+                            Toast.makeText(GPS.this, "Tidak dapat mendapatkan lokasi terakhir", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
             }
         });
+
+        // Panggil metode requestPermissions()
+        requestPermissions(new String[]{ACCESS_FINE_LOCATION}, 1);
+
+        client = LocationServices.getFusedLocationProviderClient(this);
+
         // GET CURRENT LOCATION
         FusedLocationProviderClient mFusedLocation = LocationServices.getFusedLocationProviderClient(this);
         mFusedLocation.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
-                if (location != null){
+                if (location != null) {
                     // Do it all with location
                     Log.d("My Current location", "Lat : " + location.getLatitude() + " Long : " + location.getLongitude());
                     // Display in Toast
@@ -70,9 +86,5 @@ public class GPS extends AppCompatActivity {
                 }
             }
         });
-    }
-    private void requestPermission(){
-        ActivityCompat.requestPermissions(this, new String[]{ACCESS_FINE_LOCATION}, 1);
-        System.out.println("Cek Request Permission");
     }
 }
