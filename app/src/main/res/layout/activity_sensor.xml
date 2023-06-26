@@ -2,18 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#807474"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:textAlignment="center">
 
     <TextView
         android:id="@+id/proximitySensor"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/data"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp" />
+        android:fontFamily="monospace"
+        android:textColor="#191818"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textAlignment="center"/>
 
 </LinearLayout>
