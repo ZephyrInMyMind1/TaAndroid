@@ -1,6 +1,7 @@
 package com.sugiartha.juniorandroid;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,6 +60,8 @@ public class NegaraAdapter extends BaseAdapter {
             imgView.setImageDrawable(drawable);
             text1.setText(data[position][0]);
             text2.setText(data[position][1]);
+            text1.setTextColor(Color.parseColor("#d8c7a7"));
+            text2.setTextColor(Color.parseColor("#d4dadf"));
         }
 
         return v;
