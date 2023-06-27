@@ -1,40 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#0d141d"
     tools:context=".LingkaranActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:text="Luas dan Keliling Lingkaran"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded"
+        android:gravity="center_horizontal"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:text="Luas dan Keliling Lingkaran"
+        android:textColor="#171e28"
+        android:textSize="23dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="40dp"
-        android:text="Masukkan Jari-Jari Lingkaran" />
+        android:id="@+id/nilai"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center_horizontal"
+        android:text="Hasil Perhitungan"
+        android:textColor="#d8c7a7"
+        android:textSize="17dp" />
 
     <EditText
+        android:id="@+id/jari2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="549dp"
+        android:background="#171e28"
         android:hint="Input Jari-Jari"
-        android:id="@+id/jari2"/>
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
+        android:textSize="17dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/luas"
+        android:layout_width="205dp"
         android:layout_height="wrap_content"
-        android:text="HITUNG"
-        android:id="@+id/hitung"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="209dp"
+        android:layout_marginRight="209dp"
+        android:layout_marginBottom="460dp"
+        android:background="@drawable/roundedbutton"
+        android:text="luas"
+        android:textColor="#d4dadf" />
+
+    <Button
+        android:id="@+id/keliling"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="460dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Keliling"
+        android:textColor="#d4dadf" />
+
+    <Button
+        android:id="@+id/bersihkan"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="397dp"
+        android:background="@drawable/roundedbutton"
+        android:text="bersihkan"
+        android:textColor="#d4dadf" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Luas dan Keliling"
-        android:id="@+id/nilai"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="582dp"
+        android:paddingTop="10dp"
+        android:text="Masukkan Jari-Jari Lingkaran"
+        android:textColor="#d8c7a7"
+        android:textSize="17dp" />
 
-</LinearLayout>
+</RelativeLayout>

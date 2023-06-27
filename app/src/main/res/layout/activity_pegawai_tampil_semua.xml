@@ -6,11 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#0d141d"
     tools:context=".PegawaiTampilSemuaActivity">
 
     <ListView
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#171e28"
+        android:background="@drawable/roundedhasil"
         android:id="@+id/listView" />
 
 </LinearLayout>
