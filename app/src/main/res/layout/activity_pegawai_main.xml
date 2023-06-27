@@ -22,6 +22,8 @@
         android:layout_marginStart="17dp"
         android:layout_marginRight="12dp"
         android:layout_marginBottom="620dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
         android:background="@drawable/roundedbutton"
         android:padding="10dp" />
 
@@ -57,6 +59,8 @@
         android:layout_marginEnd="17dp"
         android:layout_marginRight="17dp"
         android:layout_marginBottom="524dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
         android:background="@drawable/roundedbutton"
         android:padding="10dp" />
 
@@ -110,6 +114,8 @@
         android:layout_marginEnd="17dp"
         android:layout_marginRight="-28dp"
         android:layout_marginBottom="415dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
         android:background="@drawable/roundedbutton"
         android:padding="10dp" />
 

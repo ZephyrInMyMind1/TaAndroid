@@ -1,63 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#0d141d"
     tools:context=".PegawaiTampilActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="369dp"
         android:layout_height="wrap_content"
-        android:text="ID Pegawai"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="572dp"
+        android:text="ID Pegawai"
+        android:textColor="#d8c7a7"
+        android:textSize="16dp" />
 
     <EditText
+        android:id="@+id/editTextId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextId" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="518dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
+        android:background="@drawable/roundedbutton"
+        android:padding="10dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="369dp"
         android:layout_height="wrap_content"
-        android:text="Nama Pegawai" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="659dp"
+        android:text="Nama Pegawai"
+        android:textColor="#d8c7a7"
+        android:textSize="16dp" />
 
     <EditText
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextName" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Posisi" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextDesg" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Salary" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextSalary" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="607dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
+        android:background="@drawable/roundedbutton"
+        android:padding="10dp" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Update Pegawai"
-        android:id="@+id/buttonUpdate" />
+        android:id="@+id/buttonDelete"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="227dp"
+        android:background="@drawable/roundedhome"
+        android:text="Hapus Pegawai" />
 
     <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="215dp"
+        android:layout_marginRight="215dp"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/roundedhome"
+        android:text="Update Pegawai" />
+
+    <TextView
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="478dp"
+        android:text="Salary"
+        android:textColor="#d8c7a7"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDesg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hapus Pegawai"
-        android:id="@+id/buttonDelete" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="333dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
+        android:background="@drawable/roundedbutton"
+        android:padding="10dp" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="427dp"
+        android:textColorHint="#d4dadf"
+        android:textColor="#d4dadf"
+        android:background="@drawable/roundedbutton"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="388dp"
+        android:text="Posisi"
+        android:textColor="#d8c7a7"
+        android:textSize="16dp" />
+
+</RelativeLayout>
